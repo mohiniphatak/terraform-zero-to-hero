@@ -17,7 +17,7 @@ provider "aws" {
 resource "aws_instance" "example" {
   ami = "ami-0123456789abcdef0"
   instance_type = "t2.micro"
-  provider = "aws.us-east-1"
+  provider = "aws.us-east-1"  //aws.alias_name
 }
 
 resource "aws_instance" "example2" {
